@@ -4,7 +4,7 @@
 
 <!-- content -->
 <div class="container" id="content">
-	<?php $this->load->view('content/home'); ?>
+	<?php $this->load->view($content); ?>
 <!-- end of content -->
 </div>
 
