@@ -1,0 +1,16 @@
+.input-text {
+	padding: 20px 0;
+}
+.btn-convert {
+	padding-top: 10px;
+}
+
+#input-text {
+	width: 1000px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.result {
+	width: 1000px;
+}
