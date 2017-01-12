@@ -11,21 +11,27 @@ class Converter extends CI_Controller
 
 	function index()
 	{
-		$this->form_validation->set_rules('option', 'Convert From ...', 'required');
+		$this->form_validation->set_rules('option', 'Option convert from', 'required');
 		$this->form_validation->set_rules('input', 'Text', 'required');
 
 		if ($this->form_validation->run()) {
-			$option = $this->Converter_model->getOption();
-			$text = $this->Converter_model->getText();
-			$button = $this->Converter_model->getBtn();
+			$input = $this->Converter_model->getText();
+			$result = $this->Converter_model->convert();
 
-			echo $button;
-
+			$data = [
+				"title"		=> "Converter | Home",
+				"content"	=> "content/home",
+				"input"		=> $input,
+				"result"	=> $result
+			];
+			$this->load->view('core/wrapper', $data);
 		}
 		else {
 			$data = [
 				"title"		=> "Converter | Home",
-				"content"	=> "content/home"
+				"content"	=> "content/home",
+				"input"		=> "",
+				"result"	=> ""
 			];
 			$this->load->view('core/wrapper', $data);
 		}

@@ -17,14 +17,16 @@
 			</div>
 			<div class="row input-text">
 				<div class="input-group in" id="input-text">
-	            	<textarea type="text" name="input" class="form-control" rows="3"></textarea>
+	            	<textarea type="text" name="input" class="form-control" rows="3"><?php echo $input; ?></textarea>
 	            </div>
 			</div>
+			<div class="row">
 			<?php
 				if (validation_errors()) {
-					echo "<div class='alert alert-danger' role='alert'>". validation_errors() . "</div>";
+					echo "<div id='alert' class='alert alert-danger' role='alert'>". validation_errors() . "</div>";
 				}
 			?>
+			</div>
 		</div>
 	</div>
 	<div class="row">
@@ -44,7 +46,7 @@
 			</div>
 			<div class="row input-text">
 				<div class="input-group in" id="input-text">
-	            	<textarea type="text" name="output" class="form-control" rows="3"></textarea>
+	            	<textarea type="text" name="output" class="form-control" rows="3"><?php echo $result; ?></textarea>
 	            </div>
 			</div>
 		</div>
