@@ -36,4 +36,23 @@ class Converter extends CI_Controller
 			$this->load->view('core/wrapper', $data);
 		}
 	}
+
+	function guide()
+	{
+		$data = [
+			"title"		=> "Converter | Guide",
+			"content"	=> "content/guide",
+		];
+		$this->load->view('core/wrapper', $data);
+	}
+
+	function about()
+	{
+		$data = [
+			"title"		=> "Converter | About",
+			"content"	=> "content/about",
+		];
+		$this->load->view('core/wrapper', $data);
+	}
+
 }

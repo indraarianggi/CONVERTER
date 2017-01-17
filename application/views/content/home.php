@@ -1,4 +1,4 @@
-<form action="<?php echo base_url('converter/index') ?>" method="post">
+<form action="<?php echo base_url(); ?>" method="post">
 	<div class="row">
 		<div class="col-md-12 jumbotron text-center">
 			<div class="row">
