@@ -1,2 +1,1 @@
-Aplikasi web sederhana
-Sebagai sarana belajar dasar model MVC CodeIgniter
+Aplikasi web sederhana, sebagai sarana belajar dasar model MVC CodeIgniter
